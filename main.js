@@ -20,6 +20,8 @@ let numbersRandom = [20,45,4,88,10]
 
 let numbersUser = [];
 
+let correctNumber = [];
+
 const divEl = document.getElementById('num')
 divEl.innerHTML = numbersRandom
 
@@ -37,12 +39,9 @@ function countdown() {
 
 function numbercomparison(random, user) {
     for (let i = 0; i < random.length; i++) {
-         addnumber.includes(user[i])
-         if (addnumber === random) {
-
-            
-         }
-        
+         if (user.includes(random[i])) {
+            correctNumber.push(random[i])
+         }   
     }
     
 }
