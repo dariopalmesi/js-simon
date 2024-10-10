@@ -24,13 +24,21 @@ const divEl = document.getElementById('num')
 divEl.innerHTML = numbersRandom
 
 
-const inputEl = document.getElementById('number1')
-console.log(inputEl);
+const divEl_2 = document.getElementById('input')
+
 
 
 setTimeout(countdown, 5000);
 
 function countdown() {
     divEl.style.display = 'none'
-    inputEl.style.remove('d-none')
+    divEl_2.classList.remove('d-none')
+}
+
+function numbercomparison(random, user) {
+    for (let i = 0; i < random.length; i++) {
+        addnumber.includes(user[i])
+        
+    }
+    
 }
