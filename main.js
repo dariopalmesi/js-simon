@@ -16,10 +16,21 @@
 
 
 // creare un arradi 5 numeri
-let numbersRandom = [1,8,4,5,6]
+let numbersRandom = [20,45,4,88,10]
 
 let numbersUser = [];
 
 const divEl = document.getElementById('num')
 divEl.innerHTML = numbersRandom
 
+
+const inputEl = document.getElementById('number1')
+console.log(inputEl);
+
+
+setTimeout(countdown, 5000);
+
+function countdown() {
+    divEl.style.display = 'none'
+    inputEl.style.remove('d-none')
+}
