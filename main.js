@@ -16,4 +16,10 @@
 
 
 // creare un arradi 5 numeri
-let numbers = [1,8,4,5,6]
+let numbersRandom = [1,8,4,5,6]
+
+let numbersUser = [];
+
+const divEl = document.getElementById('num')
+divEl.innerHTML = numbersRandom
+
